@@ -7,8 +7,13 @@
 }
 <h1>Data View</h1>
 <h2>
-    Student ID: @ViewData["StuID"] and Student Name: <span style="background-color:dodgerblue">@ViewData["StuName"]</span>use ViewData.
+    Student ID: @ViewData["StuID"] and Student Name: <span style="background-color:dodgerblue">@ViewData["StuName"]</span>(use ViewData).
 </h2>
 <h2>
-    Student Name: @ViewBag.StuId and Student Name: <span style="background-color:dodgerblue">@ViewBag.StuName</span>  use ViewBag.
+    Student Name: @ViewBag.StuId and Student Name: <span style="background-color:dodgerblue">@ViewBag.StuName</span>  (use ViewBag).
 </h2>
+@Html.ActionLink("M3 action link-Html helper","M3","AR")
+<hr />
+<a asp-action="M3" asp-controller="AR">
+    M3 action link-tag helper
+</a>
