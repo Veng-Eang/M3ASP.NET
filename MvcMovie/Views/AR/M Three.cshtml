@@ -4,3 +4,17 @@
 @{
 }
 <h1 style="color:dodgerblue">M Three </h1>
+
+<ul>
+    <li>@Html.ActionLink("M3 action link-Html helper","M3","AR")</li>
+    <li>
+        <a asp-action="ReturnSpecifiedView" asp-controller="AR">
+            M Three
+        </a>
+    </li>
+    <li>
+        <a asp-action="ControllerPassDataToView" asp-controller="AR">
+            controller pass data to view
+        </a>
+    </li>
+</ul>

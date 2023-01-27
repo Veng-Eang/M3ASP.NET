@@ -12,7 +12,7 @@ namespace MvcMovie.Controllers
         {
             return View("M Three");
         }
-        public ActionResult ControllerPassDataToView(int id,string name)
+        public IActionResult ControllerPassDataToView(int id,string name)
         {
             ViewData["StuID"] = id;//store data in ViewData
             ViewData["StuName"]=name;
@@ -20,6 +20,10 @@ namespace MvcMovie.Controllers
             ViewBag.StuID = id;//store data in Viewbag
             ViewBag.StuName = name;
             return View("Data");
+        }
+        public IActionResult helper()
+        {
+            return View("Helper");
         }
     }
 }
