@@ -27,6 +27,6 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=ar}/{action=ControllerPassDataToView}/{id?}");
+    pattern: "{controller=movies}/{action=ControllerPassDataToView}/{id?}");
 
 app.Run();
