@@ -16,6 +16,7 @@ namespace MvcMovie.Controllers
 
         public MoviesController(MvcMovieContext context)
         {
+            //_context is context object which refer to database and using it;
             _context = context;
         }
 
