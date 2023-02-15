@@ -1,34 +1,36 @@
 ﻿@model MvcMovie.Models.Movie
 
 @{
-    ViewData["Title"] = "Create";
+    ViewData["Title"] = "Create Add new movie";
+    Layout = "~/Views/Shared/_M3.cshtml";
 }
 
-<h1>Create</h1>
+<h1 class="text-center">Create new movie</h1>
 
-<h4>Movie</h4>
+<h4 class="text-center">Movie</h4>
 <hr />
 <div class="row">
+    <div class="col-4"></div>
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Title" class="control-label"></label>
+                <label asp-for="Title" class="control-label">TitleKh</label>
                 <input asp-for="Title" class="form-control" />
                 <span asp-validation-for="Title" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="ReleasDate" class="control-label"></label>
+                <label asp-for="ReleasDate" class="control-label">Releas Date kh</label>
                 <input asp-for="ReleasDate" class="form-control" />
                 <span asp-validation-for="ReleasDate" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Genre" class="control-label"></label>
+                <label asp-for="Genre" class="control-label">GenreKh</label>
                 <input asp-for="Genre" class="form-control" />
                 <span asp-validation-for="Genre" class="text-danger"></span>
             </div>
             <div class="form-group">
-                <label asp-for="Price" class="control-label"></label>
+                <label asp-for="Price" class="control-label">PriceKh</label>
                 <input asp-for="Price" class="form-control" />
                 <span asp-validation-for="Price" class="text-danger"></span>
             </div>
@@ -37,10 +39,11 @@
             </div>
         </form>
     </div>
+   <div class="col-4"></div>
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Index">Back to List Movies</a>
 </div>
 
 @section Scripts {

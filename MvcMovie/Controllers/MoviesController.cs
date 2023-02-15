@@ -46,13 +46,13 @@ namespace MvcMovie.Controllers
             return View(movie);
         }
 
-        // GET: Movies/Create
+        // GET: Movies/Create it run when call without argument
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Movies/Create
+        // POST: Movies/Create          // it run when user call by pass data to form 
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
